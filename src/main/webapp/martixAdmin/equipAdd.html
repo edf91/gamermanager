@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>网游用户管理系统</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/colorpicker.css" />
+<link rel="stylesheet" href="css/datepicker.css" />
+<link rel="stylesheet" href="css/uniform.css" />
+<link rel="stylesheet" href="css/select2.css" />
+<link rel="stylesheet" href="css/matrix-style.css" />
+<link rel="stylesheet" href="css/matrix-media.css" />
+<link rel="stylesheet" href="css/bootstrap-wysihtml5.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+ <link href="mycss/ui-dialog.css" rel="stylesheet">   
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">网游用户管理 </a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li class=""><a title="" href="javascript:doLogout()"><i class="icon icon-share-alt"></i> <span class="text">退出系统</span></a></li>
+  </ul>
+</div>
+
+
+<!--sidebar-menu-->
+
+<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-list"></i>Forms</a>
+  <ul>
+    <li class="submenu"> <a href="#"><i class="icon icon-list"></i> <span>玩家管理</span></a>
+      <ul>
+        <li><a href="gamerInfoAdd.html">添加玩家</a></li>
+        <li><a href="gamerList.html">玩家列表</a></li>
+      </ul>
+    </li>
+    <li class="submenu  active open"> 
+    	<a href="#">
+	    	<i class="icon icon-list"></i> 
+	    	<span>装备管理</span>
+    	</a>
+      <ul>
+        <li  class="active"><a href="equipAdd.html">添加装备</a></li>
+        <li><a href="equipList.html">装备列表</a></li>
+      </ul>
+    </li>
+ 	<li class="submenu"> <a href="#"><i class="icon icon-list"></i> <span>工会管理</span></a>
+      <ul>
+        <li><a href="sociatyAdd.html">添加工会</a></li>
+        <li><a href="sociatyList.html">工会列表</a></li>
+      </ul>
+    </li>
+ 	<li class="submenu"> <a href="#"><i class="icon icon-list"></i> <span>系统用户管理</span></a>
+      <ul>
+        <li><a href="userAdd.html">添加管理员</a></li>
+        <li><a href="userList.html">管理员列表</a></li>
+      </ul>
+    </li>
+  
+  </ul>
+</div>
+<div id="content">
+<div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a> <a href="#" class="current">装备管理</a> </div>
+    <h1>添加装备</h1>
+  </div>
+<div class="container-fluid">
+<hr>
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <h5>添加装备</h5>
+        </div>
+        <div class="widget-content nopadding">
+          <form  class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label">装备名称 :</label>
+              <div class="controls">
+                <input type="text" class="span11" name="name" placeholder="请输入名称" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">装备品质 :</label>
+              <div class="controls">
+                <input type="text" class="span11" name="quality" placeholder="请输入装备品质" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">装备价格 :</label>
+              <div class="controls">
+                <input type="text" class="span11" name="price" placeholder="请输入装备价格" />
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-success entity-add">保存</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+<!--Footer-part-->
+<div class="row-fluid">
+  <div id="footer" class="span12"> 2015 &copy; 网游用户管理系统 <a href="#">jhy</a> </div>
+</div>
+<!--end-Footer-part--> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap-colorpicker.js"></script> 
+<script src="js/bootstrap-datepicker.js"></script> 
+<script src="js/jquery.uniform.js"></script> 
+<script src="js/select2.min.js"></script> 
+<script src="js/jquery.dataTables.min.js"></script> 
+<script src="js/matrix.js"></script> 
+<script src="js/matrix.tables.js"></script>
+<script src="js/matrix.form_common.js"></script> 
+<script src="js/jquery.peity.min.js"></script> 
+<script src="js/bootstrap-wysihtml5.js"></script> 
+<script>
+	$('.textarea_editor').wysihtml5();
+</script>
+<script src="myjs/dialog-min.js"></script>
+<script src="myjs/base.js"></script>
+<script src="myjs/equip/equip-add.js"></script> 
+</body>
+</html>
