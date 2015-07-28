@@ -1,3 +1,3 @@
 # gamermanager
-jhy 网游用户管理系统 毕业设计
-maven springMVC hibernate spring  Martix Admin
+jhy 网游用户管理系统
+maven springMVC hibernate jpa spring  Martix Admin
